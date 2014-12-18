@@ -1,0 +1,29 @@
+{
+  "name": "doxxer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/erikmueller/doxxer",
+  "repository": "https://github.com/erikmueller/doxxer",
+  "author": {
+    "name": "Erik Mueller",
+    "email": "emueller@epages.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.3.11",
+    "dox": "^0.6.1",
+    "highlight.js": "^8.4.0",
+    "lodash": "^2.4.1",
+    "marked": "^0.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^0.10.2",
+    "grunt-eslint": "^2.1.0",
+    "load-grunt-tasks": "^1.0.0",
+    "node-test": "0.0.1"
+  }
+}

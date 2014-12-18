@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="highlight/styles/github.css" />
+	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+	<style>
+		code {
+			font-family: "Source Code Pro";
+			font-size: 0.8em;
+		}
+	</style>
+	</head>
+	<body>
+	{#methods}
+		{method}
+		{summary|s}
+		Parameters:
+		<ul>
+		{#params}
+			<li>{name} must be a {types[0]}</li>
+		{/params}
+		</ul>
+		{?returns}
+		returns a {returns.types[0]} ({returns.description})
+		{/returns}
+
+		<pre><code class="js">{code}></code></pre>
+	{/methods}
+
+	<script src="highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	</body>
+</html>
